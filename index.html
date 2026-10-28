@@ -657,7 +657,21 @@ table.pr td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;white-sp
 <button class="fab" type="button" data-act="fab" aria-label="Dodaj nowy wpis"></button>
 <div id="modal"></div>
 <div class="toasts" id="toasts" aria-live="polite"></div>
-<script src="config.js"></script>
+<script>
+/*
+  Konfiguracja Firebase (synchronizacja między telefonem a komputerem).
+  Projekt: Fitform. Te wartości nie są tajne: dostęp do danych chronią reguły z pliku firestore.rules.
+*/
+window.FORMA_FIREBASE = {
+  apiKey: "AIzaSyCqo32U65zTRqHbQcelNtErmIyd6HsbKgg",
+  authDomain: "fitform-2e433.firebaseapp.com",
+  projectId: "fitform-2e433",
+  storageBucket: "fitform-2e433.firebasestorage.app",
+  messagingSenderId: "683813096132",
+  appId: "1:683813096132:web:d1d515739176f0c2239791",
+  measurementId: "G-Z89ZZ6DKGD"
+};
+</script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
